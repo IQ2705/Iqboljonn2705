@@ -1,0 +1,178 @@
+@media (max-width: 1200px) {
+    .container{
+        padding: 0 100px;
+    }
+}
+@media (max-width: 1000px) {
+    .container{
+        padding: 0 80px;
+    }
+    .header button{
+        margin-top: 40px;
+    }
+    .header__content{
+        padding: 40px 0 5px;
+        & h1{
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        & img{
+            height: 190px;
+            width: 320px;
+        }
+    }
+    .two{
+        gap: 34px;
+    }
+    .about{
+        padding: 50px 0 40px;
+        & p{
+            padding: 12px 0 22px;
+        }
+        & img{
+            height: 220px;
+            width: 300px;
+        }
+    }
+    .subscribe{
+        & img{
+            height: 220px;
+            width: 300px;
+        }
+        & p{
+            padding: 15px 0 20px;
+        }
+    }
+    .features{
+        &>img{
+            height: 420px;
+            width: 320px;
+        }
+        & .title{
+            padding: 30px 0 10px;
+        }
+    }
+    .brand{
+        &__inner{
+            margin: 30px 0 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &>h1{
+            width: 60%;
+        }
+        &__items{
+            height: 280px;
+        }
+    }
+    .title{
+        font-size: 20px;
+    }
+    .text{
+        line-height: 120%;
+        font-size: 14px;
+    }
+    .btn{
+        padding: 7px 15px;
+    }
+    .logos{
+        padding: 35px 0;
+        & img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .footer{
+        padding-top: 30px;
+        &__bottom{
+            padding: 50px 0 10px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        padding: 0 60px;
+    }
+    .header{
+        & button{
+            transform: scale(0.7);
+            margin-top: 20px;
+            &:active{
+                transform: scale(0.75);
+            }
+        }
+        &__top{
+            & nav{
+                gap: 20px;
+            }
+            & img{
+                height: 30px;
+                width: 100px;
+            }
+        } 
+        &__item{
+            gap: 60px;
+        }
+        &__content{
+            padding: 30px 0 0;
+            & img{
+                height: 150px;
+                width: 280px;
+            }
+            & h1{
+                font-size: 25px;
+            }
+        }
+    }
+    .title{
+        font-size: 19px;
+        line-height: 110%;
+    }
+    .text{
+        line-height: 110%;
+        font-size: 13px;
+    }
+    .btn{
+        font-size: 14px;
+        line-height: 120%;
+        padding: 5px 10px;
+    }
+    .about{
+        &  img{
+            height: 150px;
+            width: 220px;
+        }
+        & p{
+            padding: 5px 0;
+        }
+    }
+    
+}
+@media (max-width: 576px){
+    .two{
+        grid-template-columns: 1fr;
+    }
+    img{
+        width: 100%;
+    }
+    .header{
+        &__dots{
+            display: grid;
+        }
+        &__menu{
+            display: none;
+        }
+
+    }
+}
+@media (max-width: 360px){
+    .container{
+        padding: 0 30px;
+    }
+    .header{
+        &__top img{
+            height: 21px;
+        }
+    }
+}
+@media (max-width: 240px){
+}

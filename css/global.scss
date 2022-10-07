@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'exo';
+    font-weight: 400;
+    src: url(../fonts/Exo-Medium.woff2) format('woff2'), url(../fonts/Exo-Medium.woff) format('woff');
+}
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+    color: #FFFFFF;
+}
+$black:#0A0A0B;
+$blue:#4177DC;
+$grey:#BABEC4;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'exo';
+    background-color: $black;
+}
+.container{
+    padding: 0 130px;
+}
+p, h1, h2, h3, h4, h5, h6,span,a{
+    padding: 0;
+    margin: 0;
+}
+a{
+    white-space: no-wrap;
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+img{
+    object-fit: contain;
+}
+button{
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+.lg{
+    height: 500px;
+    width: 500px;
+    background: rgba(55, 74, 109, 0.5);
+    filter: blur(90px);
+    border-radius: 50%; 
+    position: fixed;
+    z-index: -1;
+}
+.left{ 
+    left: -138px;
+    top: -28px;
+}
+.right{  
+    left: 1031px;
+    top: 404px;
+}
+.two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 88px;
+}
+.four{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.btn{
+    font-size: 16px;
+    line-height: 140%;
+    padding: 14px 30px;
+    background-color: $blue;
+    border-radius: 4px;
+    transition:  0.3s linear;
+    border: none;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.title{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 140%;
+}
+.text{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 140%;
+    color: $grey;
+}
+.uptitle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #F1F2F3;
+}
